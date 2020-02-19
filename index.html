@@ -1,1 +1,284 @@
-Hello World
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sébastien Lachapelle</title>
+    <!-- Bootstrap core CSS -->
+    <link href="homepage.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-48368675-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row" style="padding:20px">
+        <div class="hidden-xs col-sm-2 col-md-2" id="sidebar" role="navigation" style="margin-top:190px">
+          <hr>
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#papers" class=" active">Papers</a></li>
+            <li><a href="#talks" class=" active">Presentations</a></li>
+            <li><a href="pdf/CV.pdf" class="">Resume</a></li>
+            <li><a href="https://github.com/slachapelle" class="">Github</a></li>
+            <li><a href="#contact" class="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-13 col-sm-8 col-md-8">
+          <div class="row">
+            <div id="photo">
+              <script type='text/javascript'>
+              var proba_imgs = [ 1.0]
+              var images = [
+              //"photos/id_circle2.png",
+              "photos/photo_small.png"
+              ];
+              var swapIndexA = Math.floor(Math.random() * images.length);
+              var swapIndexB = Math.floor(Math.random() * images.length);
+              var temp = images[swapIndexA];
+              images[swapIndexA] = images[swapIndexB];
+              images[swapIndexB] = temp;
+              document.write("<img class=\"img-circle\" src='" + images.shift() + "' class=\"pull-left\" style=\"margin:20px 20px 20px 0; width:145px; height:145px; border-radius:100%\" onmouseover='this.src = this.src.replace(/(\\w+)(\\.\\w{3,4})$/, \"$1_over$2\");' onmouseout='this.src = this.src.replace(/_over\\./, \".\");' />");
+              </script>
+            </div>
+            <h1>Sébastien Lachapelle</h1>
+            <p class="lead">Ph.D. Student<br>
+              Université de Montréal - DIRO<br>
+              Mila
+              <a href="mailto:sebastien dot lachapelle at umontreal dot ca" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="./icons/mail.png" height="20" width="20" alt="Send an email" style="vertical-align:middle;" border="0" onmouseover="this.src='./icons/mouseovermail.png';" onmouseout="this.src='./icons/mail.png';" ></span></a>
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-13 col-sm-8 col-md-8">
+          <div class="row">
+            <hr>
+            <p>I am a second year Ph.D student supervised by <a href="http://www.di.ens.fr/~slacoste/">Simon Lacoste-Julien</a>
+                and <a href="https://diro.umontreal.ca/repertoire-departement/professeurs/professeur/in/in15868/sg/Emma%20Frejinger/">Emma Frejinger</a>.
+                I have graduated from <a href="https://www.umontreal.ca/">Université de Montréal</a> with a Bachelor's
+                degree in <a href="https://admission.umontreal.ca/programmes/baccalaureat-en-mathematiques-et-economie/">Mathematics and Economics</a>.
+                I now work on causal structure learning, representation learning and ML applied to operations research.
+                More details can be found in my <a href="./pdf/CV.pdf">resume</a>. <br>
+             <p>
+              <center>
+              <a href="https://scholar.google.com/citations?user=uxHoJp8AAAAJ&hl=en&oi=ao">Link to my Google scholar.</a>
+              </center>
+             </p>
+            </p>
+          </div>
+          <div class="row"><a name="papers"></a>
+          <hr class="bigHr">
+          <center><h3><font color=#F3B602>Publications</font> & <font color=#008001>Preprints</font></h3></center>
+            <hr>
+             <div class="research_list">
+                <ul>
+                  <li><table>
+                        <tr>
+                            <th class="tagcell">
+                                <div class="tag conference">3</div>
+                            </th>
+                            <th class="content">
+                                <span class="title">Gradient-Based Neural DAG Learning</span> <br/>
+                                By Sébastien Lachapelle, <a href="https://mila.quebec/en/person/tristan-deleu/">Tristan Deleu</a>, Philippe Brouillard and <a href="https://www.di.ens.fr/~slacoste/">Simon Lacoste-Julien</a>.<br>
+                               (to appear at) <a href="https://iclr.cc/">ICLR 2020</a>.
+                               <p>
+                               <div class="btn-group-xs">
+                               <a a href="https://arxiv.org/abs/1906.02226" class="btn btn-default">Paper</a> <a a href="https://github.com/kurowasan/GraN-DAG" class="btn btn-default">Code</a>
+                                </div>
+                                </p>
+                            </th>
+                        </tr>
+                  </table></li>
+                </ul>
+            </div>
+            <div class="research_list">
+                <ul>
+                  <li><table>
+                        <tr>
+                            <th class="tagcell">
+                                <div class="tag conference">2</div>
+                            </th>
+                            <th class="content">
+                                <span class="title">A Meta-Transfer Objective for Learning to Disentangle Causal Mechanisms</span> <br/>
+                                By <a href="https://mila.quebec/en/person/bengio-yoshua/">Yoshua Bengio</a>, <a href="https://mila.quebec/en/person/tristan-deleu/">Tristan Deleu</a>, <a href="https://ei.is.tuebingen.mpg.de/person/nrahaman">Nasim Rahaman</a>, <a href="https://nke001.github.io/">Rosemary Ke</a>, Sébastien Lachapelle, <a href="https://mila.quebec/en/person/olexa-bilaniuk/">Olexa Bilaniuk</a>, <a href="https://anirudh9119.github.io/">Anirudh Goyal</a> and <a href="https://www.polymtl.ca/expertises/pal-christopher-j">Christopher Pal</a>.<br>
+                               (to appear at) <a href="https://iclr.cc/">ICLR 2020</a>.
+                               <p>
+                               <div class="btn-group-xs">
+                               <a a href="https://arxiv.org/abs/1901.10912" class="btn btn-default">Paper</a>
+                                </div>
+                                </p>
+                            </th>
+                        </tr>
+                  </table></li>
+                </ul>
+            </div>
+            <div class="research_list">
+                <ul>
+                  <li><table>
+                        <tr>
+                            <th class="tagcell">
+                                <div class="tag preprint">1</div>
+                            </th>
+                            <th class="content">
+                                <span class="title">Predicting Tactical Solutions to Operational Planning Problems under Imperfect Information</span> <br/>
+                               By <a href="http://intermodal.iro.umontreal.ca/Membres_EN.html">Eric Larsen</a>, Sébastien Lachapelle, <a href="https://mila.quebec/en/person/bengio-yoshua/">Yoshua Bengio</a>, <a href="https://diro.umontreal.ca/repertoire-departement/professeurs/professeur/in/in15868/sg/Emma%20Frejinger/">Emma Frejinger</a>, <a href="https://www.di.ens.fr/~slacoste/">Simon Lacoste-Julien</a> and <a href="https://www.gerad.ca/en/people/andrea-lodi">Andrea Lodi</a>.<br>
+                               arXiv, last update: March 2019  (submitted to INFORMS Journal on Computing).
+                               <p>
+                               <div class="btn-group-xs">
+                               <a a href="https://arxiv.org/abs/1807.11876" class="btn btn-default">Paper</a>
+                                </div>
+                                </p>
+                            </th>
+                        </tr>
+                  </table></li>
+                </ul>
+            </div>
+
+            <!-- </div> -->
+
+            <div class="row"><a name="talks"></a>
+            <hr class="bigHr">
+            <center><h3><font color=#F3B602>Orals</font> & <font color=#008001>Posters</font></h3></center>
+            <hr>
+                <div class="research_list">
+                <ul>
+                  <li><table>
+                        <tr>
+                            <th class="tagcell">
+                                <div class="tag preprint"></div>
+                            </th>
+                            <th class="content">
+                               <strong>NeurIPS 2019 Workshop on Solving Inverse Problems with Deep Networks</strong>
+                                <p>“Gradient-Based Neural DAG Learning”, Vancouver, British-Columbia, Canada.</p>
+                               <p>
+                               <div class="btn-group-xs">
+                               <a a href="posters/GraN_DAG_poster.pdf" class="btn btn-default">Poster</a>
+                                </div>
+                                </p>
+                            </th>
+                        </tr>
+                  </table></li>
+                </ul>
+            </div>
+                <div class="research_list">
+                <ul>
+                  <li><table>
+                        <tr>
+                            <th class="tagcell">
+                                <div class="tag conference"></div>
+                            </th>
+                            <th class="content">
+                               <strong>Montreal AI Symposium 2019</strong>
+                                <p>“Gradient-Based Neural DAG Learning”, Montreal, Quebec, Canada.</p>
+                               <p>
+                               <div class="btn-group-xs">
+                               <a a href="slides/GraN_DAG_slides_MAIS_2019.pdf" class="btn btn-default">Slides</a>
+                                </div>
+                                </p>
+                            </th>
+                        </tr>
+                  </table></li>
+                </ul>
+            </div>
+                <div class="research_list">
+                <ul>
+                  <li><table>
+                        <tr>
+                            <th class="tagcell">
+                                <div class="tag preprint"></div>
+                            </th>
+                            <th class="content">
+                               <strong>Deep Learning and Reinforcement Learning Summer School 2019</strong>
+                                <p>“Gradient-Based Neural DAG Learning”, Edmonton, Alberta, Canada.</p>
+                               <p>
+                               <div class="btn-group-xs">
+                               <a a href="posters/GraN_DAG_poster.pdf" class="btn btn-default">Poster</a>
+                                </div>
+                                </p>
+                            </th>
+                        </tr>
+                  </table></li>
+                </ul>
+            </div>
+                <div class="research_list">
+                <ul>
+                  <li><table>
+                        <tr>
+                            <th class="tagcell">
+                                <div class="tag conference"></div>
+                            </th>
+                            <th class="content">
+                               <strong>Optimization Days 2018</strong>
+                                <p>“Predicting solution summaries to integer linear programs under imperfect information with machine learning”, Montreal, Quebec, Canada.</p>
+                               <p>
+                               <div class="btn-group-xs">
+                               <a a href="slides/Predict_sol_sum.pdf" class="btn btn-default">Slides</a>
+                                </div>
+                                </p>
+                            </th>
+                        </tr>
+                  </table></li>
+                </ul>
+            </div>
+                <div class="research_list">
+                <ul>
+                  <li><table>
+                        <tr>
+                            <th class="tagcell">
+                                <div class="tag preprint"></div>
+                            </th>
+                            <th class="content">
+                               <strong>DIMACS 2018</strong>
+                                <p>“Predicting solution summaries to integer linear programs under imperfect information with
+machine learning", Bethlehem, Pennsylvania, United-States.</p>
+                               <p>
+                               <div class="btn-group-xs">
+                               <a a href="posters/pred_sol_sum_poster.pdf" class="btn btn-default">Poster</a>
+                                </div>
+                                </p>
+                            </th>
+                        </tr>
+                  </table></li>
+                </ul>
+            </div>
+
+            <hr class="bigHr">
+            <center><h3><a name="contact"></a>Contact</h3></center>
+            <hr>
+            <address>
+              <strong>Sébastien Lachapelle</strong><br>
+              Mila - Quebec AI Institute<br>
+              6666 Saint-Urbain<br>
+              Montreal, QC <br>
+              H2S 3H1
+              Canada
+            </address>
+            <div id="social-link">
+              <a href="https://www.linkedin.com/in/s%C3%A9bastien-lachapelle-a4321a122/" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="./icons/linkedin.png" height="20" width="20" alt="See LinkedIn profile" style="vertical-align:middle;" border="0" onmouseover="this.src='./icons/mouseoverlinkedin.png';" onmouseout="this.src='./icons/linkedin.png';" ></span></a>
+              <a href="mailto:sebastien dot lachapelle at umontreal dot ca" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="./icons/mail.png" height="20" width="20" alt="Send an email" style="vertical-align:middle;" border="0" onmouseover="this.src='./icons/mouseovermail.png';" onmouseout="this.src='./icons/mail.png';" ></span></a>
+            </div>
+          </div>
+        <!-- </div> -->
+      <hr>
+      <footer>
+        <p>&copy; 2019</p>
+      </footer>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="offcanvas.js"></script>
+    <script src="code.js"></script>
+  </body>
+</html>
